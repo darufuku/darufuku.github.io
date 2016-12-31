@@ -12,10 +12,9 @@ h1{
     min-height: 100vh;
     position:absolute;
     left:0;
-    right:0;
     top:0;
     text-align: center;
-    z-index: 100;
+    margin-bottom:0.5em
 }
 
 body{
