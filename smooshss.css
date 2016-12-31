@@ -6,7 +6,10 @@ h1{
 
 #header{
     color: #F75959;
-    background-color:darksalmon;
+    background-color:#d0e4e5;
+    position:absolute;
+    left:0;
+    right:0;
     width: 100%;
     text-align: center;
 }
