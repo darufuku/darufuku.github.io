@@ -1,0 +1,12 @@
+h1{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+}
+
+#header{
+    color: #F75959;
+    background-color:darksalmon;
+    width: 100%;
+    text-align: center;
+}
