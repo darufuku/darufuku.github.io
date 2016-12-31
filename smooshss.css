@@ -8,7 +8,7 @@ h1{
     width: 100%;
 }
 
-#header{
+.header{
     color: #F75959;
     background-color:#d0e4e5;
     position:absolute;
@@ -29,7 +29,7 @@ body{
     font-family: Calibri, sans-serif;
 }
 
-p{
+.content{
     position: absolute;
     font-size: 1em;
     float: left;
