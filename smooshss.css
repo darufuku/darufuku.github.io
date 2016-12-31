@@ -19,6 +19,7 @@ h1{
     top:0;
     text-align: center;
     margin-bottom:0.5em;
+    float: left;
 }
 
 body{
@@ -31,4 +32,5 @@ body{
 p{
     position: absolute;
     font-size: 1em;
+    float: left;
 }
