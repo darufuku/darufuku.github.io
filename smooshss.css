@@ -8,6 +8,10 @@ h1{
     width: 100%;
 }
 
+#container{
+    width: 960px;
+}
+
 #header{
     color: #F75959;
     background-color:#d0e4e5;
@@ -30,4 +34,8 @@ body{
 
 p{
     font-size: 1em;
+}
+
+footer{
+    color: cadetblue;
 }
