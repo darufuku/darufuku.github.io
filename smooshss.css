@@ -53,4 +53,7 @@ p{
     color: cadetblue;
     text-align: center;
     margin-bottom: 0.5em;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
 }
