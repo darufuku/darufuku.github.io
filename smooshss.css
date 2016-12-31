@@ -8,10 +8,6 @@ h1{
     width: 100%;
 }
 
-#container{
-    width: 960px;
-}
-
 #header{
     color: #F75959;
     background-color:#d0e4e5;
@@ -36,7 +32,8 @@ p{
     font-size: 1em;
 }
 
-footer{
+#footer{
     color: cadetblue;
-    float: left;
+    text-align: center;
+    margin-bottom: 0.5em;
 }
