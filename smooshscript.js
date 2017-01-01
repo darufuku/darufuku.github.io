@@ -1,5 +1,5 @@
 $(".blurb").hide();
-
+alert("hello");
 $('.blurb').hover(
   function () {
     $(this).show();
