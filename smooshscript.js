@@ -1,8 +1,10 @@
 $(".blurb").hide();
 
-$(".whiteBox").mousenter(function(){
-    $(this.".blurb").show();
-});
-$(".whiteBox").mouseleave(function(){
-    $(this.".blurb").hide();
-});
+$('.blurb').hover(
+  function () {
+    $(this).show();
+  }, 
+  function () {
+    $(this).hide();
+  }
+);
