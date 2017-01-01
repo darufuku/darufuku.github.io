@@ -78,3 +78,9 @@ a{
     height: 1em;
     margin-top: -2em;
 }
+
+.whitebox{
+    background-color: white;
+    float: left;
+    position: relative;
+}
