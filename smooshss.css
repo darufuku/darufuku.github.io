@@ -40,9 +40,9 @@ h3{
 }
 
 #rows{
-    text-align: center;
     color:darkgrey;
     position: relative;
+    text-align: center;
 }
 
 #projectheader{
@@ -80,7 +80,11 @@ a{
 }
 
 .whitebox{
+    width: 25%;
     background-color: white;
     float: left;
     position: relative;
+    padding: 15px 15px;
+    margin: 50px;
+    text-align: center;
 }
