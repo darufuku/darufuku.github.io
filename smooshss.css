@@ -22,7 +22,7 @@ h2{
 }
 
 h3{
-    color:cadetblue;
+    color:#8d9e9f;
     font-size: 1.4em;
     text-align: center;
 }
@@ -96,4 +96,8 @@ a{
     width: 100%;
     display: inline-block;
     line-height: 0;
+}
+
+img{
+    max-width: 70%;
 }
