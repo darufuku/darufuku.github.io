@@ -1,6 +1,6 @@
-$(".blurb").hide();
+
 alert("hello");
-$('.blurb').hover(
+('.whitebox').hover(
   function () {
     $(this).show();
   }, 
