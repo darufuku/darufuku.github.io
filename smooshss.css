@@ -80,11 +80,19 @@ a{
 }
 
 .whitebox{
-    width: 25%;
+    width: 20%;
+    vertical-align: top;
     background-color: white;
-    float: left;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
     position: relative;
-    padding: 15px 15px;
     margin: 50px;
     text-align: center;
+}
+
+.stretch{
+    width: 100%;
+    display: inline-block;
+    line-height: 0;
 }
