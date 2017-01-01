@@ -1,6 +1,6 @@
-alert("holla");
-$(".blurb").hide();
-
-$(".whitebox").mouseover(function(){
-    $(".blurb").show();
-});
+$('.whitebox').mouseover(function(){
+    $('.blurb').show();
+})
+$('.whitebox').mouseout(function(){
+    $('.blurb').hide();
+})
