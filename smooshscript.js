@@ -1,10 +1,5 @@
+$(".whitebox").hide();
 
-alert("hello");
-('.whitebox').hover(
-  function () {
-    $(this).show();
-  }, 
-  function () {
-    $(this).hide();
-  }
-);
+$(".whitebox").mouseover(function(){
+    $(".whitebox").show();
+});
