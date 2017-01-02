@@ -108,7 +108,7 @@ img{
 .blurb{
     color: darkgray;
     width: 70%;
-    display: none;
+    display: inline-block;
 }
 
 
