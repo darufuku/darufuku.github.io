@@ -1,14 +1,14 @@
-$('#box1').mouseover(function(){
+$('#box1').mouseenter(function(){
     $('#blurb1').fadeTo(500, 0).css('display', 'inline-block');
 });
-$('#box1').mouseout(function(){
+$('#box1').mouseleave(function(){
    $('#blurb1').fadeTo(500, 1).css('display', 'none');
 });
 
-$('#box2').mouseover(function(){
+$('#box2').mouseenter(function(){
     $('#blurb2').fadeTo(500, 0).css('display', 'inline-block');
 });
-$('#box2').mouseout(function(){
+$('#box2').mouseleave(function(){
    $('#blurb2').fadeTo(500, 1).css('display', 'none');
 });
 
