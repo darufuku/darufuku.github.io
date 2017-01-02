@@ -47,6 +47,7 @@ h3{
     color:darkgrey;
     position: relative;
     text-align: center;
+    margin-bottom: 15%;
 }
 
 #projectheader{
@@ -56,6 +57,7 @@ h3{
     text-align: center;
     padding-top: 10px;
     position: relative;
+    text-shadow: 1px 2px #c7c1c1;
 }
 
 body{
