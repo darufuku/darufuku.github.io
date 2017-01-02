@@ -1,6 +1,6 @@
-$('.whitebox').mouseover(function(){
-    $(this.'.blurb').css('display', 'inline-block');
+$('.whitebox').mouseenter(function(){
+    $(this.'.blurb').fadeIn().css('display', 'inline-block');
 })
-$('.whitebox').mouseout(function(){
-    $(this.'.blurb').css('display', 'none');
+$('.whitebox').mouseleave(function(){
+    $(this.'.blurb').fadeOut().css('display', 'none');
 })
