@@ -57,7 +57,7 @@
   }, 300);
 
   // Magnific popup calls
-  $('.popup-gallery').magnificPopup({
+  $('.popup-gallery-img').magnificPopup({
     delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
