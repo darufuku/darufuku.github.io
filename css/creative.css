@@ -170,7 +170,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   /*background-image: url("../img/header.jpg");*/
-  background-image: url("../img/backg2.jpg");
+  background-image: url("../img/backdrop.svg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
