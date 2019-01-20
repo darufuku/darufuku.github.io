@@ -1,0 +1,66 @@
+.circle-track-fill {
+  margin: auto;
+  animation: circle-track-fill 2s reverse infinite;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+@keyframes circle-track-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+#div-morpher1 {
+    width: 100px;
+    height: 100px;
+    background-color:darksalmon;
+    animation: morph-div1 3s 1s infinite alternate cubic-bezier(0.420, 0.000, 0.490, 1.210);
+    /*cubic-bezier is a timing function, use to smooth transitions*/
+}
+
+#div-morpher2 {
+    width: 100px;
+    height: 100px;
+    background-color:cadetblue;
+    animation: morph-div2 3s 1s infinite alternate cubic-bezier(0.420, 0.000, 0.490, 1.210);
+    /*cubic-bezier is a timing function, use to smooth transitions*/
+}
+
+@keyframes morph-div1 {
+    0% {
+        border-radius: 0 0 0 0;
+    }
+    20% {
+        border-radius: 50% 0 0 0;
+    }
+    40% {
+        border-radius: 50% 50% 0 0;
+    }
+}
+
+@keyframes morph-div2 {
+    0% {
+        height: 100%;
+        border-radius: 0 0 0 0;
+        background-color:cadetblue;
+        transform:rotate(0deg);
+    }
+    40% {
+        border-radius: 50% 50% 0 50%;
+        background-color:darkseagreen;
+        transform:rotate(90deg);
+    }
+    60% {
+        border-radius: 100% 100% 100% 100%;
+        background-color:burlywood;
+        transform:rotate(135deg);
+    }
+    80% {  
+        border-radius: 50% 0 0 0;
+        background-color: indianred;
+        transform:rotate(180deg);
+    }
+    100% {  
+        border-radius:50%;
+        background-color: salmon;
+    }
+}
