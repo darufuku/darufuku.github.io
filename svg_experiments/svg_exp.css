@@ -1,12 +1,23 @@
-.circle-track-fill {
-  margin: auto;
-  animation: circle-track-fill 2s reverse infinite;
-  transform: rotate(-90deg);
-  transform-origin: center;
+#explode {
+    margin: auto;
+    margin-top: 10px;
+    width: 80px;
+    height: 100px;
+    background-color:antiquewhite;
+    transform: rotate(0deg);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    animation: shake 4s infinite cubic-bezier(0.420, 0.000, 0.490, 1.210);
 }
 
-@keyframes circle-track-fill {
-  to { stroke-dasharray: 0 100; }
+#explode:hover {
+  font-size:0px;
+  opacity:0;
+  -moz-transform: scale(3, 3);
+  -webkit-transform: scale(3, 3);
+  transform: scale(3, 3);
 }
 
 #div-morpher1 {
@@ -35,6 +46,24 @@
     background-color: cadetblue;
     transform: translate(0,-3em);
     animation: bouncing 0.7s infinite alternate cubic-bezier(0.1,0.25,0.1,1);
+}
+
+@keyframes shake {
+  1%, 20% {
+    transform: translate3d(-1px, 0, 0);
+    transform: rotate(-2deg);
+  }
+  5%, 15% {
+    transform: translate3d(2px, 0, 0);
+    transform: rotate(8deg);
+  }
+  7%, 10%, 17% {
+    transform: translate3d(-2px, 0, 0);
+    transform: rotate(-12deg);
+  }
+  3%, 12% {
+    transform: translate3d(1px, 0, 0);
+  }
 }
 
 @keyframes morph-div1 {
