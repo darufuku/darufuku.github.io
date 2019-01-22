@@ -10,6 +10,7 @@
 }
 
 #div-morpher1 {
+    margin: auto;
     width: 100px;
     height: 100px;
     background-color:darksalmon;
@@ -18,11 +19,22 @@
 }
 
 #div-morpher2 {
+    margin: auto;
     width: 100px;
     height: 100px;
     background-color:cadetblue;
     animation: morph-div2 3s 1s infinite alternate cubic-bezier(0.420, 0.000, 0.490, 1.210);
     /*cubic-bezier is a timing function, use to smooth transitions*/
+}
+
+#bouncing-ball {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    transform: translate(0,-3em);
+    animation: bouncing 0.7s infinite alternate cubic-bezier(0.1,0.25,0.1,1);
 }
 
 @keyframes morph-div1 {
@@ -63,4 +75,18 @@
         border-radius:50%;
         background-color: salmon;
     }
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translate(0,2em);
+        border-radius: 80% 80% 50% 50%;
+    }
+    20% {
+        border-radius: 50%;
+    }
+}
+
+.sm-center {
+    text-align: center;
 }
