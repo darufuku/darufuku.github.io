@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Geese Tracks</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon/site.webmanifest">
+
+        <link href="../css/base.css" rel="stylesheet">
+        <link href="../css/more.css" rel="stylesheet">
+        <link href="../css/portfolio.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="../js/navbar.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="https://kit.fontawesome.com/d9e5544ae6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body id="page-top">
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("../nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+                $("#portfolio-link").addClass("active");
+                $("header a").each((_, a) => {
+                    $(a).attr("href", "../" + $(a).attr("href"));
+                });
+            });
+        </script>
+        
+        <div class="entry-wrapper">
+                <div class="entry-intro">
+                    <img class="entry-logo" alt="logo of portfolio entry: yahoo logo" src="../img/portfolio/yahoo.png"/>
+                    <a href="https://en.wikipedia.org/wiki/Yahoo!" target="_blank"><h1>Yahoo!</h1></a>
+                    <p>An amalgamation of web services, including email, finances, news, and sports. It is also very fun to write this word.</p>
+                </div>
+                <section class="entry-desc">
+                    <p>My four months at Yahoo were spent on the desktop mail (i.e. email) team. We were responsible for building out the frontend of Yahoo! Mail on web. React was 
+                        the library of choice, with Redux being used for state management.
+                    </p>
+                    <h1>Things I Did</h1>
+                    <p class="date">May 2019 - Aug. 2019</p>
+                    <p>A significant project of mine was not actually directly involved with Yahoo! Mail, but was designing and delivering a feature flag diagnostic tool 
+                        for my team (and potentially other teams too).
+                    </p>    
+                    <p><strong>Problem:</strong> Feature enablement in the app is managed via a settings file. This is hard to read, and harder to interpret using mere human eyesight.
+                        Figuring out whether a feature would be enabled or disabled for a given user configuration can be unpleasant. 
+                        It is also inconvenient to track the evolution of a feature’s enablement settings over time — jumping wildly through commit history trying to find a feature flag
+                        change that broke something is not an ideal way to spend one's Friday evening.</p>
+                    <p><strong>Solution:</strong>
+                        Leveraging Github's GraphQL API, settings files were fetched and parsed to generate diffs of their states over time. We'd know which ones to fetch by also parsing 
+                        changelog files and using those version tags to find the relevant settings file versions.
+                        A web app was created using React Redux, and showed a timeline view of feature flag setting changes. Users could also filter by flag, enabled/disabled,
+                        and user settings.
+                    </p>
+                </section>
+        </div>
+
+        <div id="footer-placeholder"/>
+        <script>
+            $.get("../footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script> 
+    </body>
+
+</html>

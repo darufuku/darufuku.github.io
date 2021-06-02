@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Geese Tracks</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/more.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="https://kit.fontawesome.com/d9e5544ae6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body id="page-top">
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+                $("#portfolio-link").addClass("active");
+            });
+        </script>
+        
+        <div class="portfolio-bio">
+            <h1>Portfolio</h1>
+            <p>These are things that I did.</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card" style="background-color: #abdde0">
+                <a class="card-link" href="portfolio/autodesk-plangrid.html">
+                    <img class="card-img" src="img/portfolio/autodesk-plangrid-2.png"/>
+                    <div class="card-link-caption"><h1>Autodesk / PlanGrid</h1><p>Backend & Frontend Engineering Intern</p></div>
+                </a>
+            </div>
+            <div class="card" style="background-color: #f6df89;">
+                <a class="card-link" href="portfolio/yahoo-internship.html">
+                    <img class="card-img" src="img/portfolio/yahoo.png"/>
+                    <div class="card-link-caption"><h1>Yahoo! <sup>(ooOoo)</sup></h1><p>Frontend Software Intern</p></div>
+                </a>
+            </div>
+            <div class="card">
+                <a class="card-link" href="#">
+                    <img class="card-img" src="https://i0.wp.com/zamzows.com/wp-content/uploads/2015/11/chinchilla.jpg?resize=1080%2C675&ssl=1"/>
+                    <div class="card-link-caption"><h1>Chinchilla in Hand</h1><p></p></div>
+                </a>
+            </div>
+            <div class="card">
+                <a class="card-link" href="#">
+                    <img class="card-img" src="https://www.exoticnutrition.com/Images/Product%20Pictures/Chinchilla/chinchillaleaf.jpg"/>
+                    <div class="card-link-caption"><h1>Chinchilla by Rocks</h1><p></p></div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img class="card-img" src="https://media-be.chewy.com/wp-content/uploads/2019/07/25113849/Chincilla-Life-Stages.jpg"/>
+                    <div class="card-link-caption"><h1>Chinchilla with Baby</h1><p></sup></p></div>
+                </a>
+            </div>
+            <div class="card">
+                <a class="card-link" href="#">
+                    <img class="card-img" src="https://news.cgtn.com/news/7959544e3555444d31557a4e35416a4e786b7a4e31457a6333566d54/img/85bb153903364106af7dbe10093f41a7/85bb153903364106af7dbe10093f41a7.jpg"/>
+                    <div class="card-link-caption"><h1>Chinchilla and Greens</h1><p></p></div>
+                </a>
+            </div>
+        </div>
+        
+        <div id="footer-placeholder"/>
+        <script>
+            $.get("footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script> 
+    </body>
+
+</html>

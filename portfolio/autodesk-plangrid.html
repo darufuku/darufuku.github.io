@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Geese Tracks</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon/site.webmanifest">
+
+        <link href="../css/base.css" rel="stylesheet">
+        <link href="../css/more.css" rel="stylesheet">
+        <link href="../css/portfolio.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="../js/navbar.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="https://kit.fontawesome.com/d9e5544ae6.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body id="page-top">
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("../nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+                $("#portfolio-link").addClass("active");
+                $("header a").each((_, a) => {
+                    $(a).attr("href", "../" + $(a).attr("href"));
+                });
+            });
+        </script>
+        
+        <div class="entry-wrapper">
+                <div class="entry-intro">
+                    <img class="entry-logo" alt="logo of portfolio entry: autodesk and plangrid logo mashup" src="../img/portfolio/autodesk-plangrid-2.png"/>
+                    <a href="https://www.plangrid.com/ca-en/" target="_blank"><h1>PlanGrid</h1></a>
+                    <p>PlanGrid is a construction blueprints and project management software.</p> <p>It was acquired recently by Autodesk and is now under the Autodesk Construction Cloud.</p>
+                </div>
+                <section class="entry-desc">
+                    <p>I spent two 4-month internships at PlanGrid. The first was as a frontend engineer, and the last as a backend engineer. Both internships were spent with the Photos team, 
+                        which is responsible for serving photo-related features including a photo gallery and photos API.
+                    </p>
+                    <h1>Backend Internship</h1>
+                    <p class="date">Sep. 2020 - Dec. 2020</p>
+                    <p>Here, I worked primarily on the Photos backend service (Python) and Postgres databases. I dabbled in some cross-team work which involved Node JS backends and
+                        tried my hand at the Kotlin service that powers PlanGrid's mobile client platforms.
+                    </p>
+                    <p>I built a self-synchronization (red badging) solution to provide a cohesive photos experience across platforms and clients. This involved efficiently computing
+                        sync state during CUD operations and then flagging out-of-date clients. Before, clients would have to poll a sync state endpoint to see if they were up to date. With this change,
+                        a decreased reliance on manual state polling was enabled.
+                    </p>
+                    <p>Additionally, I wrote solutions for visibility rules and role-based permissions for Photos.
+                        Whereas photos were initially visible to everyone on a project, they are now shown only to users with the relevant role and permissions.</p>
+                    <p>In this role, I also performed backfills and data migrations, as well as practiced test-driven development.</p>
+
+                    <h1>Frontend Internship</h1>
+                    <p class="date">Jan. 2020 - Apr. 2020</p>
+                    <p>During this time, I worked mainly with React and Apollo Server, and added features like 360-photo viewing and cloud upload support PlanGrid's web photo gallery.</p>
+                    <p>One of my main projects was to make photo reporting a better experience by adding support for customization and filtering. The reports were templated with React, and report
+                         processing took place in a Python service. </p>
+                         
+                    <p>I also resolved a leading customer request by adding blueprint-based photo reporting to the Sheets feature of PlanGrid.
+                         This allowed project users to print out an informative report of the photos attached to their construction sheets.
+                    </p>
+                </section>
+        </div>
+
+        <div id="footer-placeholder"/>
+        <script>
+            $.get("../footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script> 
+    </body>
+
+</html>

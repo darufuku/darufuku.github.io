@@ -2,7 +2,6 @@
 <html lang="en">
 
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
@@ -10,12 +9,54 @@
 
         <title>Geese Tracks</title>
 
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
 
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/more.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="https://kit.fontawesome.com/d9e5544ae6.js" crossorigin="anonymous"></script>
     </head>
 
     <body id="page-top">
-        let's gooo
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+                $("#home-link").addClass("active");
+            });
+        </script> 
+        
+        <div class="bio">
+            <h1>Jessie Fu</h1>
+            <p>Software Developer currently based out of her bedroom.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jessie-fu/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                <a href="https://github.com/darufuku" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+            </div>
+        </div>
+        <div id="blob-container">
+            <svg class="blob" width="295.61mm" version="1.1" viewBox="0 0 295.61 81.489" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(-2.6024 -123.87)">
+                 <path id="blob-body" d="m150.37 128.87a149.99 91.973 0 0 0-147.76 76.489h295.61a149.99 91.973 0 0 0-147.84-76.489z" stroke-width=".37081"/>
+                 <path id="blob-left-eye" d="m132.48 144.05c-1.365 0.80398-2.9055 2.521-2.7568 4.3334s1.9866 3.7201 3.7028 3.9108c1.7162 0.1907 3.3108-1.3355 3.7568-3.0933 0.44597-1.7578-0.25673-3.7473-1.2027-4.7966-0.94594-1.0493-2.1351-1.1583-3.5001-0.35437z" fill="#fff" stroke="#000" stroke-width=".11547px"/>
+                 <path id="blob-right-eye" class="blob-re" d="m161.98 144.97c-0.38169 0.65243-0.84666 1.4177-0.6651 2.5038s1.0096 2.4928 2.0543 3.3254 2.306 1.0912 3.5209 0.29193c1.2148-0.79927 2.3832-2.6563 2.3797-4.3626-3e-3 -1.7063-1.1527-3.2271-2.4277-3.7961-1.275-0.56902-2.5646-0.13649-3.3733 0.35453s-1.1071 1.0306-1.4888 1.683z" fill="#fff" stroke="#000" stroke-width=".077927px"/>
+                </g>
+            </svg>          
+        </div>
+
+        <div id="footer-placeholder"/>
+        <script>
+            $.get("footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script> 
+        <script type="text/javascript" src="js/blob.js"></script>
     </body>
 
 </html>
