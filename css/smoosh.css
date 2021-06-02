@@ -1,9 +1,0 @@
-    #left_blink, #right_blink {
-      animation: blink 3s ease alternate infinite;
-    }
-
-    @keyframes blink {
-      0% { height: 5%; }
-      10% { transform: height: 1%; }
-      30% { transform: height: 5%; }
-    }
